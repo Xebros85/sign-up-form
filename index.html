@@ -7,6 +7,27 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
+  <h1>Hello Forms</h1>
+	<div class="container">
+		<form action="https://www.httpbin.org/post" method="post">
+			<p>
+				<label for="name">Name:</label>
+				<input type="text" name="name" id="name">
+			</p>
+			<p>
+				<label for="email">E-mail:</label>
+				<input type="email" name="email" id="email">
+			</p>
+			<p>
+				<label for="message">Message:</label>
+				<textarea name="message" id="message"></textarea>
+			</p>
+			<p class="button">
+				<button type="submit">Submit Message</button>
+			</p>
+
+		</form>
+	</div>
 </body>
 </html>
+
