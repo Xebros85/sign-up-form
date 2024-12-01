@@ -1,60 +1,30 @@
-body {
-  /* Center the form */
-  text-align: center;
+#container {
+  height: 700px;
+  width: 400px;
+  position: relative;
 }
 
-form {
-  display: inline-block;
-  /* Form Outline */
-  padding: 1em;
-  border: 1px solid #ccc;
-  border-radius: 1em;
+#image {
+  position: absolute;
+  width: 400px;
+  height: 700px;
+  left: 0;
+  top: 0;
 }
 
-p + p {
-  margin-top: 1em;
+#text {
+
+  width: 400px;
+  height: 150px;
+  background: black;
+  
+  z-index: 100;
+  position: absolute;
+  color: white;
+  font-size: 36px;
+  font-weight: bold;
+  left: 150px;
+  top: 200px;
 }
 
-label {
-  /* Uniform size and alignment */
-  display: inline-block;
-  min-width: 90px;
-  text-align: right;
-}
 
-input, textarea {
-  /* To make sure that all text fields have the same font settings
-  By default, text areas have a monospace font */
-  font: 1em sans-serif;
-  /* Uniform text field size */
-  width: 300px;
-  box-sizing: border-box;
-  /* Math form field borders */
-  border: 1px solid #999;
-}
-
-input:focus, textarea:focus {
-  /* Set the outline width and style */
-  outline-style: solid;
-  /* To give a little highlight on active elements */
-  outline-color: #000;
-}
-
-textarea {
-  /* Align multiline text fields with their labels */
-  vertical-align: top;
-  /* Provide space to type some text */
-  height: 5em;
-}
-
-.button {
-  /* Align buttons with the text field */
-  padding-left: 90px; 
-  /* Same size as the label elements */
-}
-
-button {
-  /* This extra margin represents roughly the same space as the space
-  between the labels and their text fields */
-  margin-left: 0.5em;
-}
